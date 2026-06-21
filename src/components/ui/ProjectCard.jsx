@@ -7,6 +7,7 @@ const ProjectCard = ({project}) => {
    
   const {title, description, image, technologies, demoUrl, gitHubUrl,  metrics } = project
 
+
   return (
     <div className="group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-300">
       <div className="relative h-64 overflow-hidden">
@@ -78,6 +79,7 @@ const ProjectCard = ({project}) => {
             <p className="text-sm font-meduim text-green-400"> {metrics} </p>
           </div>
         )}
+
       </div>
     </div>
   )

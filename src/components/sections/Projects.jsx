@@ -60,9 +60,9 @@ const filteredProjects = activeCategory == 'All'
   return (
     <section id="projects" className="relative py-20 bg-black overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-1/3 right-0 w-96 h-96 bg-primary/20 opacity-20 blur-3xl rounded-full" />
-            <div className="absolute top-1/3 left-0 w-96 h-96 bg-primary/20 opacity-20 blur-3xl rounded-full" />
-            <div className="absolute top-1/2 right-1/3 w-96 h-96 bg-primary/20 opacity-20 blur-3xl rounded-full" />
+            <div className="absolute top-1/3 right-0 w-96 h-96 bg-primary/50 opacity-20 blur-3xl rounded-full" />
+            <div className="absolute top-1/3 left-0 w-96 h-96 bg-primary/60 opacity-20 blur-3xl rounded-full" />
+            <div className="absolute top-1/2 right-1/3 w-96 h-96 bg-primary/50 opacity-20 blur-3xl rounded-full" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-4 lg:px-8">
