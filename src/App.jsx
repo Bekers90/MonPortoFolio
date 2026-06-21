@@ -6,10 +6,11 @@ import Projects from './components/sections/Projects';
 import Services from './components/sections/Services';
 import Testimonials from './components/sections/Testimonials';
 import  Contact  from './components/sections/Contact'
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-clack pb-[100vh]">
+    <div className="min-h-screen bg-clack ">
      <NavBar />
 
     <main>
@@ -21,7 +22,7 @@ function App() {
       <Testimonials />
       <Contact />
     </main>
-
+     <Footer />
     </div>
   )
 }

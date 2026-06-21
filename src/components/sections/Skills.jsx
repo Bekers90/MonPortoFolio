@@ -51,7 +51,7 @@ const getLevelColor = (level) => {
 
 
   return (
-    <section id='skill' className='relative py-20 bg-black overflow-hidden'>
+    <section id='skills' className='relative py-20 bg-black overflow-hidden'>
        {/* animation background gradient */}
        <div className='absolute inset-0 overflow-hidden'>
             <div className='absolute top-1/4 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl opacity-50' />

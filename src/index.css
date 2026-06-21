@@ -5,7 +5,7 @@
 @theme  {
   --font-display: 'Urbanist', sans-serif;
   --breakpoint-3xl: 1920px;
-  --color-primary: #8DFF69;
+  --color-primary: #BD0D00;
 }
 
 @layer base{
@@ -31,17 +31,17 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        background: linear-gradient(180deg, #80FF69, #6FE047);
+        background: linear-gradient(180deg, #BD0D00, #e04747);
         border-radius: 5px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(180deg, #6FE047, #80FF69);
+        background: linear-gradient(180deg, #e04747, #BD0D00);
     }
 
     * {
         scrollbar-width: thin;
-        scrollbar-color: #6FE047 #0A0A0A;
+        scrollbar-color: #421111 #0A0A0A;
     }
 
     .hide-scrollbar {

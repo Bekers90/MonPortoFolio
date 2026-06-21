@@ -13,6 +13,8 @@ const [activeCategory, setActivecategory] = useState('All');
 const [currentIndex,  setCurrentIndex] = useState(0);
 const scrollContainerRef = useRef(null);
 
+const isFirstRender = useRef(true);
+
 const filteredProjects = activeCategory == 'All'
        ? projects
        : projects.filter(project => project.category === activeCategory);
@@ -28,6 +30,12 @@ const filteredProjects = activeCategory == 'All'
        
        const scrollToIndex = (index) => {
         setCurrentIndex(index);
+
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return; // Arrête la fonction immédiatement pour éviter le saut d'écran
+        }
+        
         if(scrollContainerRef.current) {
             const container = scrollContainerRef.current;
             const cardWidth = container.offsetWidth / 3;

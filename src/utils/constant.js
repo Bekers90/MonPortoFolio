@@ -39,5 +39,6 @@ export const NAV_LINKS = [
    { id: 'skills', label: 'skills' },
   { id: 'projects', label: 'Projets' },
    { id: 'services', label: 'Services' },
-  { id: 'testimonials', label: 'Témoignages' }
+  { id: 'testimonials', label: 'Témoignages' },
+  
 ]

@@ -1,22 +1,25 @@
-import {useState, useEffect, useRef} from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-export const useUserScrollReveal = (option = {}) => {
+export const useUserScrollReveal = (options = {}) => {
+    // Extraction des options avec des valeurs par défaut
     const {
         threshold = 0.1,
         rootMargin = '0px',
-    } = option;
+    } = options;
 
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
 
     useEffect(() => {
-       const element  = ref.useEffect;
-       if(!element) return;
+        // CORRECTION : Utilisation de .current au lieu de .useEffect
+        const element = ref.current; 
+        if (!element) return;
 
-         const observer = new IntersectionObserver(
+        const observer = new IntersectionObserver(
             ([entry]) => {
-                if(entry.isIntersecting) {
+                if (entry.isIntersecting) {
                     setIsVisible(true);
+                    // Arrête d'observer dès que l'élément est visible
                     observer.unobserve(element);
                 }
             },
@@ -24,16 +27,15 @@ export const useUserScrollReveal = (option = {}) => {
                 threshold,
                 rootMargin,
             }
-         );
+        );
 
-         observer.observe(element);
+        observer.observe(element);
 
-         return () => {
-            if(element) {
-                observer.unobserve(element);
-            }
-         };
-        }, [threshold, rootMargin]);
+        // Nettoyage global plus propre avec .disconnect()
+        return () => {
+            observer.disconnect();
+        };
+    }, [threshold, rootMargin]); // Les dépendances restent correctes
 
-    return {ref, isVisible};
-}
+    return { ref, isVisible };
+};

@@ -4,12 +4,19 @@ import FadeIn from "../animations/FadeIn";
 import { ChevronRight, ChevronLeft,  Quote, Star } from "lucide-react";
 
 const Testimonials = () => {
-
+    
+    const isFirstRender = useRef(true);
     const [currentIndex,  setCurrentIndex] = useState(0);
     const scrollContainerRef = useRef(null);
 
     const scrollToIndex = (index) => {
         setCurrentIndex(index);
+
+         if (isFirstRender.current) {
+                isFirstRender.current = false;
+                return; // Arrête la fonction immédiatement pour éviter le saut d'écran
+            }
+
         if(scrollContainerRef.current) {
             const container = scrollContainerRef.current;
             const cardWidth = container.offsetWidth;
