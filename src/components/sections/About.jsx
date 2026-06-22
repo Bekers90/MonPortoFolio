@@ -1,8 +1,9 @@
-import { SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si"
+import { SiCanva, SiClaude, SiMeta, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si"
 import RadialGradientBackground from "../animations/background/RadialGradientBackground"
 import { Code2, Download, Sparkles } from "lucide-react";
 import FadeIn from "../animations/FadeIn"
 import { ABOUT_STATS, PERSONAL_INFO } from "../../utils/constant";
+import { VscCode } from "react-icons/vsc";
 
 const About = () => {
 
@@ -12,6 +13,12 @@ const About = () => {
     {name:'TypeScript', icon: SiTypescript, color:'#3178C6'},
     {name:'Tailwind css', icon: SiTailwindcss, color:'#06B6D4'},
     {name:'Node.js', icon: SiNodedotjs, color:'#339933'},
+    {name:'Meta', icon: SiMeta, color:'#339933'},
+    {name:'Claude', icon: SiClaude, color:'#339933'},
+    {name:'Postgresql', icon: SiPostgresql, color:'#339933'},
+    {name:'VS-Code', icon: VscCode, color:'#339933'},
+    {name:'Prisma', icon: SiPrisma, color:'#339933'},
+    {name:'canvas', icon: SiCanva, color:'#339933'},
     {name:'MongoDB', icon: SiMongodb, color:'#47A248'},
   ];
 
@@ -96,7 +103,7 @@ const About = () => {
                         <div className="flex-1">
                             <h2 className="text-lg font-semibold text-white mb-2">Expertise</h2>
                             <p className="tex-sm text-white/70 leading-relaxed">
-                              Specialiste dans la construction scalable des application web avec des technologie moderne et des meilleurs pratiques
+                              Analyse et construction scalable des applications Web avec des technologies Modernes et des meilleurs pratiques
                             </p>
                         </div>
                       </div>
@@ -111,7 +118,7 @@ const About = () => {
                       </div>
                       <h3 className="text-base font-semiboldtext-white mb-2"> Clean Code</h3>
                       <p className="text-sm text-white/70 leading-relaxed">
-                        Writing maintainable, well-documented code that scales.
+                        Rédaction maintenable et bonne documentation du code. 
                       </p>
                     </div>
                   </div> 
@@ -125,6 +132,7 @@ const About = () => {
                       <h3 className="text-base font-semiboldtext-white mb-2">Performance </h3>
                       <p className="text-sm text-white/70 leading-relaxed"> 
                         Optimizing for speed and efficiency in every project.
+                        Optimisation pour la rapidité et efficacité dans tout le project.
                       </p>
                     </div>
                   </div>
@@ -134,8 +142,8 @@ const About = () => {
                     <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                       <div className="grid grid-cols-3 gap-6 text-center">
                         <div>
-                          <div className="text-2xl font-bold text-primary mb-1"> 100% </div>
-                          <div className="text-xs text-white/60">Clint Satisfied</div>
+                          <div className="text-2xl font-bold text-primary mb-1"> 98% </div>
+                          <div className="text-xs text-white/60">Client Satisfé</div>
                         </div>
                         <div>
                           <div className="text-2xl font-bold text-primary mb-1"> 24/7 </div>
@@ -161,11 +169,11 @@ const About = () => {
                   Tech Stack & Expertise
                 </h3>
                 <p className="text-sm text-white/60">
-                    Technologies I work with to build amaqing program
+                    Mes Technologies du quotidien pour réaliser vos projects
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-6 lg:col-end-6 gap-4 w-full max-w-4xl">
+              <div className="grid grid-cols-2 md:grid-cols-6 lg:col-end-8 gap-4 w-full max-w-4xl">
                 {skills.map((skill, index) => (
                   <div
                   key={index}

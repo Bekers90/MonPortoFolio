@@ -18,7 +18,7 @@ const Hero = () => {
             <div className="text-left">
 
               <FadeIn delay={0}>
-                <div className="infine-flex items-center gap-2.5 px-4.5 py-2.75 mb-8 bg-linear-to-r from-primary/18 via-primary/15 to-primary/20 border border-primary/70 rounded-full ">
+                <div className="infine flex items-center gap-2.5 px-4.5 py-2.75 mb-8 bg-linear-to-r from-primary/18 via-primary/15 to-primary/20 border border-primary/70 rounded-full ">
                   <Star className="w-4 text-white fill-white" />
                   <span className="text-xs md:text-sm text-xhite tracking-[1.2px]">
                       {PERSONAL_INFO.title} | Based in {PERSONAL_INFO.location}
@@ -28,13 +28,13 @@ const Hero = () => {
 
               <FadeIn delay={100}>
                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-5 leading-tight">
-                  Reatjs Developper Portofolio
+                  React.js Developper Portofolio and Digital Marketing
                  </h1>
               </FadeIn>
 
               <FadeIn delay={200}>
                 <p className="text-lg text-white/70 max-w-137.5">
-                  Building modern, scalable web applications with React, javascript, and cutting-edge technologie. Trusforming  ideas 
+                  Construction Moderne et scalable des application Web Moderne avec ReactJS. Et Digitalisation de vos service pour répondre plus facilement a vos besoins
                 </p>
               </FadeIn>
 
@@ -43,7 +43,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('contact')}
                 >
                   <div className="relative z-10 bg-white text-[#212121] rounded-[17px] px-3.5 text-base font-medium border border-white ">
-                    Get in Touch
+                    Contactez moi
                    </div>
                 </button>
               </FadeIn>

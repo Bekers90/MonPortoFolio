@@ -32,7 +32,7 @@ export const skills = [
     name: 'HTML5 / CSS3',
     icon: 'Layers',
     level: 'Expert',
-    experience: '4+ years'
+    experience: '5+ years'
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ export const skills = [
     name: 'Redux / Zustand',
     icon: 'Cpu',
     level: 'Advanced',
-    experience: '2+ years'
+    experience: '1+ years'
   },
   {
     id: 10,
@@ -71,16 +71,23 @@ export const skills = [
   },
   {
     id: 11,
-    name: 'GraphQL / REST APIs',
+    name: 'REST APIs',
     icon: 'Link2',
     level: 'Advanced',
     experience: '2+ years'
   },
   {
     id: 12,
-    name: 'UI/UX Design (Figma)',
+    name: 'Design Graphic ',
     icon: 'Compass',
     level: 'Intermediate',
-    experience: '2+ years'
-  }
+    experience: '5+ years'
+  },
+  {
+    id: 13,
+    name: 'Claude Code',
+    icon: 'ClaudeCode',
+    level: 'Intermediate',
+    experience: '3+ years'
+  },
 ];

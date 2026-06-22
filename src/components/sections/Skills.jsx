@@ -8,13 +8,15 @@ import {skills} from '../../utils/skills'
 const Skills = () => {
 
     const skillCategories = {
-  'Frontend Development': [
+  'FullStack Development': [
     skills.find(s => s.name === 'React.js'),
     skills.find(s => s.name === 'JavaScript'),
     skills.find(s => s.name === 'TypeScript'),
     skills.find(s => s.name === 'Next.js'),
     skills.find(s => s.name === 'Tailwind CSS'),
     skills.find(s => s.name === 'Redux'),
+    skills.find(s => s.name === 'Node.js'),
+    skills.find(s => s.name === 'REST APIs'),
   ].filter(Boolean),
   'Backend & APIs': [
     skills.find(s => s.name === 'Node.js'),
@@ -23,8 +25,9 @@ const Skills = () => {
   'Tools & Others': [
     skills.find(s => s.name === 'Git & GitHub'),
     skills.find(s => s.name === 'Responsive Design'),
-    skills.find(s => s.name === 'Figma'),
-    skills.find(s => s.name === 'Vite'),
+    skills.find(s => s.name === 'Canvas'),
+    skills.find(s => s.name === 'claude code'),
+    skills.find(s => s.name === 'Firebase'),
   ].filter(Boolean),
 };
 
@@ -42,7 +45,7 @@ const getProficiencyLevel = (level) => {
 //Get level Color
 const getLevelColor = (level) => {
     const colors = {
-        'Expert': 'text-[#8DFF69] bg-[#8DFF69]/20 border-[#8DFF69]/30',
+        'Expert': 'text-[#BD0D00] bg-[#BD0D00]/20 border-[#BD0D00]/30',
         'Advenced' : 'text-cyan-400 bg-cyan-500/20 border-cyan/30',
         'Intermediaire' : 'text-emerold-400 bg-gray-500/20 border-emerold-500/20',
     };

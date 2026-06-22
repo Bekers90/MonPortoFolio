@@ -20,18 +20,18 @@ export const SOCIAL_LINKS = {
 };
 
 export const STATS = [
-  { label: 'Années d\'Expérience', value: '3+' },
-  { label: 'Projets Terminés', value: '50+' },
+  { label: 'Années d\'Expérience', value: '5+' },
+  { label: 'Projets Terminés', value: '10+' },
   { label: 'Technologies', value: '15+' },
-  { label: 'Satisfaction Client', value: '98%' }
+  { label: 'Satisfaction Client', value: '90%' }
 ];
 
 export const ABOUT_STATS = [
-  { label: 'Clients Satisfaits', value: '45+' },
+  { label: 'Clients Satisfaits', value: '20+' },
   { label: 'Commits de Code', value: '2.5K+' },
   { label: 'Heures de Code', value: '1.8K+' },
-  { label: 'Tasses de Café', value: '600+' },
-  { label: 'Projets Open Source', value: '12+' }
+  { label: 'Prestation IT', value: '30+' },
+  { label: 'Marketing Digital', value: '12+' }
 ];
 
 export const NAV_LINKS = [
