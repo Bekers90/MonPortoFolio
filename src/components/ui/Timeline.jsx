@@ -64,7 +64,7 @@ const Pillar = () => (
 // La carte intègre le badge de la date uniquement visible sur mobile (md:hidden)
 const ItemCard = ({ diplome,  etablissement, specialite, date }) => {
   return (
-    <div className="flex flex-col bg-white/5 gap-y-2  border border-white/10 shadow-md rounded-xl p-4 transition-all hover:border-primary/30 duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl self-center w-full">
+    <div className="flex flex-col  gap-y-2  bg-white/5 border border-white/10 shadow-md rounded-xl p-4 transition-all hover:border-primary/30 duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl self-center w-full">
       <div className="flex flex-wrap justify-between items-center border-b border-primary/50 pb-1 gap-2">
         <div className="text-white font-bold text-base md:text-lg">{diplome}</div>
         {specialite && (

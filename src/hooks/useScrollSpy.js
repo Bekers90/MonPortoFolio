@@ -3,49 +3,58 @@ import { useEffect, useState } from 'react';
 export const useScrollSpy = (sectionIds, offset = 100) => {
   const [activeSection, setActiveSection] = useState(null);
 
-  // Stabilisation du tableau pour éviter les redéclenchements infinis du useEffect
-  const serializedIds = JSON.stringify(sectionIds);
-
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + offset;
+    // Évite l'écoute si le tableau est vide
+    if (!sectionIds || sectionIds.length === 0) return;
 
-      // Parcours inverse pour détecter correctement la section la plus haute visible
-      for (let i = sectionIds.length - 1; i >= 0; i--) {
-        const section = document.getElementById(sectionIds[i]);
-        if (section) {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
+    const observers = [];
 
-          // CORRECTION : Remplacement du signe "-" par "+" pour englober toute la hauteur de la section
-          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            setActiveSection(sectionIds[i]);
-            break;
-          }
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
         }
+      });
+    };
+
+    // Configuration de la zone de détection (simule votre offset via rootMargin)
+    // -offsetpx en haut signifie que la détection se fait juste sous votre Navbar
+    const options = {
+      root: null,
+      rootMargin: `-${offset}px 0px -60% 0px`, 
+      threshold: 0,
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+
+    // Observation de chaque section présente dans le DOM
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        observer.observe(element);
       }
-    };
+    });
 
-    handleScroll(); // Appel initial pour définir la section active dès le chargement
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      observer.disconnect();
     };
-  }, [serializedIds, offset, sectionIds]); // Utilisation de la version sérialisée
+  }, [JSON.stringify(sectionIds), offset]); // Dépendance stabilisée proprement
 
   return activeSection;
 };
 
-// Fonction de défilement fluide vers une section
+// Fonction de défilement fluide vers une section (Calcul universel et précis)
 export const scrollToSection = (sectionId, offset = 80) => {
   const section = document.getElementById(sectionId);
   if (section) {
-    // CORRECTION : Remplacement de "=" par "-" pour soustraire proprement la hauteur de votre Navbar
-    const top = section.offsetTop - offset;
-    
+    // CORRECTION : getBoundingClientRect() inclut les marges réelles par rapport à la fenêtre de navigation
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = section.getBoundingClientRect().top;
+    const elementPosition = elementRect - bodyRect;
+    const offsetPosition = elementPosition - offset;
+
     window.scrollTo({
-      top: top,
+      top: offsetPosition,
       behavior: 'smooth'
     });
   }

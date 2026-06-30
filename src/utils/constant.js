@@ -13,10 +13,10 @@ export const PERSONAL_INFO = {
 };
 
 export const SOCIAL_LINKS = {
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
-  twitter: 'https://twitter.com',
-  dribbble: 'https://dribbble.com'
+  github: 'https://github.com/Bekers90',
+  linkedin: 'https://www.linkedin.com/in/boris-essomba-kemmoe-b92311184/',
+  twitter: 'https://x.com/BorisKemmoe',
+  facebook: 'https://web.facebook.com/essombakemmoe/',
 };
 
 export const STATS = [
@@ -39,6 +39,8 @@ export const NAV_LINKS = [
    { id: 'skills', label: 'skills' },
   { id: 'projects', label: 'Projets' },
    { id: 'services', label: 'Services' },
+   { id: 'experience', label: 'Expériences' },
+   { id: 'formation', label: 'Formations' },
   { id: 'testimonials', label: 'Témoignages' },
   
 ]

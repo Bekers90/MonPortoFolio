@@ -2,6 +2,7 @@ import Timeline from "../ui/Timeline"
 import FadeIn from "../animations/FadeIn"
 import { GraduationCap } from "lucide-react"
 import { formations } from "../../utils/constant"
+import ParticleBackground from "../background/ParticleBackground"
 
 
 const Formation = () => {
@@ -9,7 +10,8 @@ const Formation = () => {
 
 
   return (
-    <section id="projects" className="relative py-20 bg-black overflow-hidden">
+    <section id="formation" className="relative py-20 bg-black overflow-hidden">
+         <ParticleBackground />
         <div className="absolute inset-0 overflow-hidden">
             <div className="absolute left-1/3 right-1/2 w-96 h-96 bg-primary/50 opacity-40 blur-3xl rounded-full" />
             <div className="absolute top-1/4 left-0 w-96 h-96 bg-primary/60 opacity-50 blur-3xl rounded-full" />
