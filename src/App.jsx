@@ -7,6 +7,8 @@ import Services from './components/sections/Services';
 import Testimonials from './components/sections/Testimonials';
 import  Contact  from './components/sections/Contact'
 import Footer from './components/layout/Footer';
+import Formation from './components/sections/Formation';
+import Experiences from './components/sections/Experiences';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Skills />
       <Projects />
       <Services />
+      <Formation />
+       <Experiences/>
       <Testimonials />
       <Contact />
     </main>
@@ -28,3 +32,4 @@ function App() {
 }
 
 export default App
+
