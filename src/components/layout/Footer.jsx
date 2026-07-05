@@ -66,8 +66,9 @@ const Footer = () => {
                 {NAV_LINKS.map((link) => (
                   <li key={link.id}>
                     <button
+                    type="button"
                     className="group flex items-center text-white/60 hover:text-primary gap-2 transition-all duration-300"
-                    onClick={scrollToSection(link.label)}
+                    onClick={() => scrollToSection(link.id)}
                     >
                       <div className="w-1.5 h-1.5 rounded-full bg-white/30 group-hover:w-2 group-hover:bg-primary transition-all duration-300" />
                       <span className="text-sm"> {link.label} </span>

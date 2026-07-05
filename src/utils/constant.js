@@ -7,8 +7,8 @@ export const PERSONAL_INFO = {
   resume: '/Cv_Essomba.pdf',
   bio: [
     "Je suis un développeur React passionné avec plus de 3 ans d'expérience dans la création d'applications web.",
-    "Mon expertise couvre l'ensemble de l'écosystème frontend, de React et Next.js au design adaptatif et à l'optimisation des performances.",
-    "Quand je ne code pas, vous me trouverez en train de contribuer à des projets open-source ou de concevoir de nouvelles interfaces."
+    "Mon expertise couvre l'ensemble de l'écosystème frontend et backend, de React et Next.js au design adaptatif et du backend NodeJs.",
+    "Quand je ne code pas, vous me trouverez en train d'obtenir une nouvelle compétences ou de concevoir de nouveau projet digital."
   ]
 };
 

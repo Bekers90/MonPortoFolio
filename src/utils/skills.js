@@ -73,20 +73,27 @@ export const skills = [
     id: 11,
     name: 'REST APIs',
     icon: 'Link2',
-    level: 'Advanced',
-    experience: '2+ years'
+    level: 'Intermediate',
+    experience: '1+ years'
   },
   {
     id: 12,
-    name: 'Design Graphic ',
+    name: 'Design Graphic',
     icon: 'Compass',
     level: 'Intermediate',
     experience: '5+ years'
   },
   {
     id: 13,
-    name: 'Claude Code',
-    icon: 'ClaudeCode',
+    name: 'Prisma',
+    icon: 'SiPrisma',
+    level: 'Intermediate',
+    experience: '3+ years'
+  },
+   {
+    id: 14,
+    name: 'SQL',
+    icon: 'Database',
     level: 'Intermediate',
     experience: '3+ years'
   },

@@ -13,7 +13,7 @@ const About = () => {
     {name:'TypeScript', icon: SiTypescript, color:'#3178C6'},
     {name:'Tailwind css', icon: SiTailwindcss, color:'#06B6D4'},
     {name:'Node.js', icon: SiNodedotjs, color:'#339933'},
-    {name:'Meta', icon: SiMeta, color:'#339933'},
+    {name:'Meta', icon: SiMeta, color:'#339933'}, 
     {name:'Claude', icon: SiClaude, color:'#339933'},
     {name:'Postgresql', icon: SiPostgresql, color:'#339933'},
     {name:'VS-Code', icon: VscCode, color:'#339933'},
@@ -46,7 +46,7 @@ const About = () => {
 
                 <FadeIn delay={100}>
                   <h2 className="text-4xl lg:text-5xl font-normal text-white leading-tight">
-                     Grafting Digital Experiences that Matter
+                     Créer des expériences numériques qui comptent
                   </h2>
                 </FadeIn>
 
@@ -131,7 +131,6 @@ const About = () => {
                       </div>
                       <h3 className="text-base font-semiboldtext-white mb-2">Performance </h3>
                       <p className="text-sm text-white/70 leading-relaxed"> 
-                        Optimizing for speed and efficiency in every project.
                         Optimisation pour la rapidité et efficacité dans tout le project.
                       </p>
                     </div>

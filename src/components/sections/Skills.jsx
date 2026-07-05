@@ -8,25 +8,22 @@ import {skills} from '../../utils/skills'
 const Skills = () => {
 
     const skillCategories = {
-  'FullStack Development': [
+  'Frontend Development': [
     skills.find(s => s.name === 'React.js'),
     skills.find(s => s.name === 'JavaScript'),
     skills.find(s => s.name === 'TypeScript'),
     skills.find(s => s.name === 'Next.js'),
     skills.find(s => s.name === 'Tailwind CSS'),
-    skills.find(s => s.name === 'Redux'),
-    skills.find(s => s.name === 'Node.js'),
-    skills.find(s => s.name === 'REST APIs'),
   ].filter(Boolean),
   'Backend & APIs': [
     skills.find(s => s.name === 'Node.js'),
+     skills.find(s => s.name === 'Redux'),
     skills.find(s => s.name === 'REST APIs'),
   ].filter(Boolean),
   'Tools & Others': [
     skills.find(s => s.name === 'Git & GitHub'),
-    skills.find(s => s.name === 'Responsive Design'),
-    skills.find(s => s.name === 'Canvas'),
-    skills.find(s => s.name === 'claude code'),
+    skills.find(s => s.name === 'Design Graphic'),
+    skills.find(s => s.name === 'SQL'),
     skills.find(s => s.name === 'Firebase'),
   ].filter(Boolean),
 };

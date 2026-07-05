@@ -1,31 +1,31 @@
 export const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'Full-stack online shopping application with real-time inventory management, secure payments, and user authentication.',
-    image: '/images/projects/project3.jpg',
-    category: 'Full Stack',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    title: 'Site vitrine pour une entreprise de services',
+    description: 'Site web moderne et réactif pour une entreprise de services, mettant en avant les offres, les témoignages clients et un formulaire de contact intégré.',
+    image: '/images/projects/project1.png',
+    category: 'Frontend',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'React'],
     metrics: '40% increase in conversion',
-    demoUrl: 'https://timetoprogram.com/projects',
-    githubUrl: 'https://github.com'
+    demoUrl: 'https://www.blumdesk.com/',
+    githubUrl: 'https://github.com/Bekers90/Blumdesk'
   },
   {
     id: 2,
     title: 'Task Management Dashboard',
-    description: 'Collaborative project management tool with drag-and-drop kanban boards, real-time updates, and team analytics.',
+    description: 'Une app pour les bases en React NextJs, Auth, gestion de Stock, gestion des Order, gestion des Transaction, CRUD et dashboard pour les statistiques.',
     image: '/images/projects/project6.jpg',
     category: 'Web Apps',
     technologies: ['React', 'TypeScript', 'Firebase', 'Tailwind'],
-    metrics: '500+ active users',
+    metrics: '50+ active users',
     demoUrl: 'https://timetoprogram.com/projects',
-    githubUrl: 'https://github.com'
+    githubUrl: 'https://github.com/Bekers90/Kers_Asso_Stock'
   },
   {
     id: 3,
     title: 'Component Library',
     description: 'Comprehensive React component library with 50+ customizable components, built with accessibility and speed in mind.',
-    image: '/images/projects/project1.jpg',
+    image: '/images/projects/project1.png',
     category: 'UI Components',
     technologies: ['React', 'TypeScript', 'Storybook', 'CSS Modules'],
     metrics: '10k+ downloads/mo',
@@ -57,13 +57,13 @@ export const projects = [
   {
     id: 6,
     title: 'Portfolio Website',
-    description: 'Ultra-fast minimalist portfolio designed for developers to showcase their creative projects and professional experience.',
-    image: '/images/projects/project5.jpg',
+    description: 'Portfolio minimaliste ultra-rapide conçu pour permettre aux développeurs de présenter leurs projets créatifs.',
+    image: '/images/projects/project6.png',
     category: 'Frontend',
-    technologies: ['HTML5', 'Sass', 'JavaScript', 'Gatsby'],
-    metrics: '99/100 Lighthouse score',
-    demoUrl: 'https://timetoprogram.com/projects',
-    githubUrl: 'https://github.com'
+    technologies: ['HTML5', 'ReactJS', 'JavaScript', 'TailwindCSS'],
+    metrics: '50/100 score',
+    demoUrl: 'https://portofoliokers.web.app/',
+    githubUrl: 'https://github.com/Bekers90/PortofoliaSpaKers'
   }
 ];
 

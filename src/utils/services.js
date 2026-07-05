@@ -3,36 +3,36 @@ export const services = [
     id: 1,
     icon: 'Layout',
     title: 'Frontend Development',
-    description: 'Building responsive and performant web applications using React, Next.js, and modern JavaScript practices.'
+    description: 'Création d\'applications web réactives et performantes à l\'aide de React, Next.js et des pratiques JavaScript modernes.'
   },
   {
     id: 2,
     icon: 'Smartphone',
     title: 'Responsive Design',
-    description: 'Creating mobile-first, responsive interfaces that work seamlessly across all devices and screen sizes.'
+    description: 'Création d\'interfaces réactives et adaptatives qui fonctionnent parfaitement sur tous les appareils et tailles d\'écran.'
   },
   {
     id: 3,
     icon: 'Palette',
     title: 'UI/UX Design',
-    description: 'Designing intuitive and visually appealing user interfaces with a focus on usability, accessibility, and user experience.'
+    description: 'Concevoir des interfaces utilisateur intuitives et visuellement attrayantes, en mettant l\'accent sur la facilité d\'utilisation, l\'accessibilité et l\'expérience utilisateur.'
   },
   {
     id: 4,
     icon: 'Code2',
     title: 'Custom Components',
-    description: 'Developing reusable, scalable component libraries and design systems that maintain consistency across platforms.'
+    description: 'Développement de bibliothèques de composants réutilisables et évolutives, ainsi que de systèmes de conception garantissant la cohérence entre les plateformes.'
   },
   {
     id: 5,
     icon: 'Zap',
     title: 'Performance Optimization',
-    description: 'Optimizing web applications for speed and efficiency through code splitting, lazy loading, and asset management.'
+    description: 'Optimisation des applications web pour plus de vitesse et d\'efficacité grâce au fractionnement du code, au chargement différé et à la gestion des ressources.'
   },
   {
     id: 6,
     icon: 'Server',
     title: 'Backend Integration',
-    description: 'Connecting frontend interfaces with secure RESTful APIs, databases, and third-party services smoothly.'
+    description: 'Connexion des interfaces frontend avec des APIs RESTful sécurisées, des bases de données et des services tiers de manière fluide.'
   }
 ];

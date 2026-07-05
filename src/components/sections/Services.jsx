@@ -29,13 +29,13 @@ const Services = () => {
             <div className="text-center mb-16">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full mb-2l">
                     <Icons.Wrench className="w-4 h-4 text-primary" />
-                    <span className="text-sm text-primary font-medium"> What I Offer</span>
+                    <span className="text-sm text-primary font-medium"> Nous vous proposons ...</span>
                 </div>
                 <h2 className="text-4xl mx-auto lg:text-5xl font-normal max-w-2xl text-white mb-4">
-                    Builts for innovation, designed for results.
+                    Innovation et expertise pour vos projets numériques
                 </h2>
                 <p className="text-lg text-white/60 max-w-2xl mx-auto">
-                    Comprehensive solutions to transform your ideas into exceptional digital experience
+                   Des solutions complètes pour transformer vos idées en une expérience numérique exceptionnelle.
                 </p>
             </div>
         </FadeIn>
