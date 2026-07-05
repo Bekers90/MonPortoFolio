@@ -30,7 +30,7 @@ const Footer = () => {
               <h3 className="text-3xl font-bold bg-linear-to-r from-primary/80 via-primary to-primary/80 bg-clip-text text-transparent mb-2">
                 {PERSONAL_INFO.name.split(' ')[0]}
               </h3>
-              <p className="">
+              <p className="mb-3">
                 {PERSONAL_INFO.tagline}
               </p>
 
