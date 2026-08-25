@@ -69,7 +69,7 @@ const Testimonials = () => {
             </FadeIn>
 
             <FadeIn delay={100}>
-                <div className="relative">
+                <div className="relative w-3/4 mx-auto">
                     <div
                         ref={scrollContainerRef}
                         className="overflow-x-hidden scroll-smooth "

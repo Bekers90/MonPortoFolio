@@ -69,9 +69,9 @@ const NavBar = () => {
                 <div className='hidden md:flex items-center gap-2'>
                   <button
                   onClick={() => handleNavClick('contact')}
-                  className='px-7 py-3.5 bg-white text-[#212121] font-medium text-base rounded-[17px] border border-white hover:bg-white/90 transition-all duration-300'
+                  className='px-5 py-1 bg-linear-to-r from-primary/10 to-primary text-[#f0eeee] font-medium text-base rounded-[17px] border border-black hover:bg-red transition-all duration-300'
                   >
-                     Hire Me
+                     Contact Me
                   </button>
                 </div>
 

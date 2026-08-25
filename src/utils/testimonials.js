@@ -4,7 +4,7 @@ export const testimonials = [
     name: 'Sarah Mitchell',
     role: 'CTO',
     company: 'TechStart Inc.',
-    image: '/images/testimonials/person1.jpg',
+    image: '/images/testimonials/person1.jpeg',
     quote: 'Outstanding work on our React application. Alex delivered a high-performance, scalable solution ahead of schedule.',
     rating: 5
   },
@@ -31,7 +31,7 @@ export const testimonials = [
     name: 'David Kim',
     role: 'Lead Developer',
     company: 'CloudScale',
-    image: '/images/testimonials/person4.jpg',
+    image: '/images/testimonials/person4.jpeg',
     quote: 'The code quality was exceptional and the Next.js optimization significantly improved our SEO rankings and loading speed.',
     rating: 5
   },

@@ -77,13 +77,14 @@ const About = () => {
                 </FadeIn>
 
                 <FadeIn delay={400}>
-                  <button
-                   onClick={()=> window.open(PERSONAL_INFO.resume, '_blank')}
-                   className="inline-flex items-center gap-3 bg-white hover:bg-white/90 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
+                  <a
+                    href="/images/Cv_Essomba.pdf" 
+                    download="CV_Essomba-boris.pdf" 
+                    className="inline-flex items-center gap-3 bg-linear-to-r from-primary/10 to-primary hover:bg-white/10 text-white/70 rounded-full px-5 py-1 text-base font-medium transition-all duration-300 w-fit group no-underline"
                   >
                     <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
                     Telecharger mon CV
-                  </button>
+                  </a>
                 </FadeIn>
 
 
