@@ -51,11 +51,11 @@ const Certificat = () => {
           </div>
         </FadeIn>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {certificats.map((certificat, index) => (
             <FadeIn key={certificat.id} delay={index * 100}>
               <article className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40">
-                <div className="relative aspect-4/3 overflow-hidden bg-white/5">
+                <div className="relative aspect-4/2 overflow-hidden bg-white/5">
                   <CertificateImage image={certificat.image} name={certificat.nom} />
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent" />
                 </div>

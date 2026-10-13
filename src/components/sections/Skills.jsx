@@ -1,11 +1,29 @@
 
 import * as Icons from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
 import FadeIn from "../animations/FadeIn"
 import {skills} from '../../utils/skills'
 
 
 
 const Skills = () => {
+  const [barsVisible, setBarsVisible] = useState(false)
+  const sectionRef = useRef(null)
+
+  useEffect(() => {
+    const section = sectionRef.current
+    if (!section) return
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setBarsVisible(true)
+        observer.disconnect()
+      }
+    }, { threshold: 0.1 })
+
+    observer.observe(section)
+    return () => observer.disconnect()
+  }, [])
 
     const skillCategories = {
   'Frontend Development': [
@@ -14,44 +32,38 @@ const Skills = () => {
     skills.find(s => s.name === 'TypeScript'),
     skills.find(s => s.name === 'Next.js'),
     skills.find(s => s.name === 'Tailwind CSS'),
+    skills.find(s => s.name === 'HTML5 / CSS3'),
   ].filter(Boolean),
   'Backend & APIs': [
     skills.find(s => s.name === 'Node.js'),
-     skills.find(s => s.name === 'Redux'),
+    skills.find(s => s.name === 'Redux / Zustand'),
     skills.find(s => s.name === 'REST APIs'),
+    skills.find(s => s.name === 'PHP/Laravel'),
+    skills.find(s => s.name === 'Prisma'),
   ].filter(Boolean),
   'Tools & Others': [
     skills.find(s => s.name === 'Git & GitHub'),
     skills.find(s => s.name === 'Design Graphic'),
     skills.find(s => s.name === 'SQL'),
     skills.find(s => s.name === 'Firebase'),
+    skills.find(s => s.name === 'TCP/IP'),
+    skills.find(s => s.name === 'Linux'),
   ].filter(Boolean),
 };
-
-//Get proficiency percentage
-
-const getProficiencyLevel = (level) => {
-    const levels = {
-        'Expert': 95,
-        'Advenced' : 80,
-        'Intermediaire' : 65,
-    };
-    return levels[level] || 50;
-}
 
 //Get level Color
 const getLevelColor = (level) => {
     const colors = {
         'Expert': 'text-[#BD0D00] bg-[#BD0D00]/20 border-[#BD0D00]/30',
-        'Advenced' : 'text-cyan-400 bg-cyan-500/20 border-cyan/30',
-        'Intermediaire' : 'text-emerold-400 bg-gray-500/20 border-emerold-500/20',
+      'Advanced': 'text-cyan-400 bg-cyan-500/20 border-cyan-500/30',
+      'Intermediate': 'text-emerald-400 bg-emerald-500/20 border-emerald-500/30',
     };
     return colors[level] || "text-gray-400 bg-gray-500/20 border-gray-500/30"
 }
 
 
   return (
-    <section id='skills' className='relative py-20 bg-black overflow-hidden'>
+    <section ref={sectionRef} id='skills' className='relative py-20 bg-black overflow-hidden'>
        {/* animation background gradient */}
        <div className='absolute inset-0 overflow-hidden'>
             <div className='absolute top-1/4 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl opacity-50' />
@@ -87,9 +99,9 @@ const getLevelColor = (level) => {
 
                     {/* Skill list */}
                     <div className='space-y-5'>
-                        {categorySkills.map((skill, SkillIndex) => {
-                            const IconComponent = Icons[skill.icon || Icons.Code2]
-                            const proficiency = getProficiencyLevel(skill.level)
+                        {categorySkills.map((skill) => {
+                            const IconComponent = Icons[skill.icon] ?? Icons.Code2
+                            const proficiency = skill.proficiency
 
                             return(
                                 <div key={skill.id} className='space-y-2'>
@@ -103,7 +115,7 @@ const getLevelColor = (level) => {
                                                 {skill.name}
                                             </div>
                                             <div className='text-xs text-white/50'>
-                                                {skill.experience}
+                                              {proficiency}%
                                             </div>
                                         </div>
                                       </div>
@@ -114,8 +126,8 @@ const getLevelColor = (level) => {
 
                                     <div className='relative h-1.5 bg-white/5 rounded-full overflow-hidden'>
                                        <div
-                                       className='absolute top-0 left-0 h-full bg-linear-to-r from-primary/10 to-primary/80 rounded-full transition-all duration-100 ease-out'
-                                       style = {{width: `${proficiency}%`}}
+                                       className='absolute top-0 left-0 h-full bg-linear-to-r from-primary/10 to-primary/80 rounded-full transition-[width] duration-1000 ease-out motion-reduce:transition-none'
+                                       style = {{width: barsVisible ? `${proficiency}%` : '0%'}}
                                        ></div>
                                     </div>
                                 </div>

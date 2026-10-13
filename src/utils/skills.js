@@ -4,97 +4,118 @@ export const skills = [
     name: 'React.js',
     icon: 'Code2',
     level: 'Expert',
-    experience: '3+ years'
+    proficiency: 90
   },
   {
     id: 2,
     name: 'JavaScript',
     icon: 'FileCode',
     level: 'Expert',
-    experience: '4+ years'
+    proficiency: 80
   },
   {
     id: 3,
     name: 'TypeScript',
     icon: 'FileType',
     level: 'Advanced',
-    experience: '2+ years'
+    proficiency: 70
   },
   {
     id: 4,
     name: 'Next.js',
     icon: 'Zap',
     level: 'Advanced',
-    experience: '2+ years'
+    proficiency: 75
   },
   {
     id: 5,
     name: 'HTML5 / CSS3',
     icon: 'Layers',
     level: 'Expert',
-    experience: '5+ years'
+    proficiency: 95
   },
   {
     id: 6,
     name: 'Tailwind CSS',
     icon: 'Palette',
     level: 'Expert',
-    experience: '3+ years'
+    proficiency: 95
   },
   {
     id: 7,
     name: 'Node.js',
     icon: 'Server',
     level: 'Intermediate',
-    experience: '2+ years'
+    proficiency: 55
   },
   {
     id: 8,
     name: 'Git & GitHub',
     icon: 'GitBranch',
     level: 'Advanced',
-    experience: '4+ years'
+    proficiency: 83
   },
   {
     id: 9,
     name: 'Redux / Zustand',
     icon: 'Cpu',
     level: 'Advanced',
-    experience: '1+ years'
+    proficiency: 60
   },
   {
     id: 10,
     name: 'Firebase',
     icon: 'Flame',
     level: 'Intermediate',
-    experience: '1+ years'
+    proficiency: 65
   },
   {
     id: 11,
     name: 'REST APIs',
     icon: 'Link2',
     level: 'Intermediate',
-    experience: '1+ years'
+    proficiency: 55
   },
   {
     id: 12,
     name: 'Design Graphic',
     icon: 'Compass',
-    level: 'Intermediate',
-    experience: '5+ years'
+    level: 'Advanced',
+    proficiency: 80
   },
   {
     id: 13,
     name: 'Prisma',
-    icon: 'SiPrisma',
+    icon: 'Database',
     level: 'Intermediate',
-    experience: '3+ years'
+    proficiency: 60
   },
    {
     id: 14,
     name: 'SQL',
     icon: 'Database',
     level: 'Intermediate',
-    experience: '3+ years'
+    proficiency: 55
+  },
+  {
+    id: 15,
+    name: 'TCP/IP',
+    icon: 'Network',
+    level: 'Intermediate',
+    proficiency: 55
+  },
+  {
+    id: 16,
+    name: 'Linux',
+    icon: 'Terminal',
+    level: 'Intermediate',
+    proficiency: 50
+  },
+  {
+    id: 17,
+    name: 'PHP/Laravel',
+    icon: 'Code2',
+    level: 'Intermediate',
+    proficiency: 50
   },
 ];

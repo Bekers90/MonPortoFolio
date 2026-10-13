@@ -25,9 +25,10 @@ export const certificats = [
   },
   {
     id: 4,
-    nom: "Fondamentaux en Marketing Digital",
-    institut: "Google SkillShop",
-    periode: "juillet 2026",
-    image: "/images/certificats/certificat_google_MD.png",
+    nom: "Cybersecurity Fundamentals",
+    institut: "IBM Skillbuild",
+    periode: "Septembre 2026",
+    image: "/images/certificats/IBM_cybersecurite.png",
+    pdf: "/images/certificats/IBMDesign20260908-20-wih6bl.pdf",
   },
 ];
